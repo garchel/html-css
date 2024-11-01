@@ -38,16 +38,16 @@ section#login{
     border-radius: 20px;
     overflow: hidden; /* para a imagem não ultrapassar o container, ou seja, manter o border-radius */
 
+    
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.433);
+    
+    transition: width 0.5s, height 0.5s; /* animação de transição */
+    transition-timing-function: ease; /*suavização da animação de transição */
+
     position: absolute; /* daqui para baixo é pra centralizar o elemento */
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.433);
-
-
-    transition: width 0.5s, height 0.5s; /* animação de transição */
-    transition-timing-function: ease; /*suavização da animação de transição */
 }
 
 section#login > div#imagem {
@@ -73,11 +73,31 @@ div#formulario{
 
 form > div.campo{
     background-color: #5f2c82;
+    border: 2px solid #5f2c82;
     width: 100%;
     height: 40px;
     display: block;
-    border-radius: 5px;
+    border-radius: 8px;
     margin: 5px 0px;
+}
+
+div.campo > i{
+    color: white;
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+
+div.campo > input{
+    background-color: #61d0cc;
+    font-size: 1em;
+    width: calc(100% - 45px);
+    height: 100%;
+    border: 0px;
+    border-radius: 8px;
+    padding: 5px;
+    transform: translateY(-12px);
+
 }
 
 form.campo > label {

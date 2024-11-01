@@ -8,6 +8,7 @@
 
     section#login{
         width: 80vw;
+        height: 280px;
     }
 
     section#login > div#imagem{
@@ -29,18 +30,18 @@
     }
 
     section#login{
-        width: 950px;
-        
+        width: 1000px;
+        height: 400px;
     }
 
     section#login > div#imagem{
-        float: left;
+        float: right;
         width: 50%;
         height: 100%;
     }
 
     section#login > div#formulario{
-        float: right;
+        float: left;
         width: 50%;
     }
 
@@ -50,6 +51,23 @@
 
 
     div#formulario{
-        font-size: 1.2em;
+        font-size: 1.1em;
     }
+
+    div.campo > input{
+        background-color: #61d0cc;
+        font-size: 1em;
+        width: calc(100% - 48px);
+        height: 100%;
+        border: 0px;
+        border-radius: 8px;
+        padding: 5px;
+        transform: translateY(-22px);
+    
+    }
+
+    section > i{
+        
+    }
+    
 }
